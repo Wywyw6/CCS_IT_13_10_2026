@@ -168,3 +168,295 @@ nav a::after,
   color: var(--muted);
   font-size: 11px;
 }
+
+/* SOCIAL LINKS: white rounded tiles that lift */
+.footer-links {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-links > a,
+.wechat-popover > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 10px 14px;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  color: #0f488b;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.footer-links > a::after {
+  display: none;
+}
+
+.footer-links > a:is(:hover, :focus-visible),
+.wechat-popover > summary:is(:hover, :focus-visible),
+.wechat-popover[open] > summary {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px #0f488b25, 0 2px 6px #0000000d;
+  text-decoration: none;
+}
+
+/* WECHAT: hover preview and click-to-toggle */
+.wechat-popover {
+  position: relative;
+  border: 0;
+}
+
+.wechat-popover > summary {
+  list-style: none;
+}
+
+.wechat-popover > summary::-webkit-details-marker {
+  display: none;
+}
+
+.wechat-popover > summary > span:last-child {
+  font-size: inherit;
+  font-weight: inherit;
+  transform: none;
+}
+
+.wechat-popup {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 60;
+  width: 240px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 16px;
+  box-shadow: 0 14px 45px #0f172a30;
+  color: #17263d;
+  text-align: center;
+}
+
+.wechat-popup strong,
+.wechat-popup small {
+  display: block;
+  font-size: 12px;
+}
+
+.wechat-popup img {
+  width: 200px;
+  height: auto;
+  margin: 12px auto;
+}
+
+/* Allow hover preview even while details is closed. */
+.wechat-popover::details-content {
+  content-visibility: visible;
+}
+
+.wechat-popover[open] > .wechat-popup {
+  display: block;
+}
+
+@media (hover: hover) {
+  .wechat-popover:hover > .wechat-popup {
+    display: block;
+  }
+}
+
+/* FIXED TOOLS: bottom-right corner */
+.floating-tools {
+  position: fixed;
+  right: max(22px, env(safe-area-inset-right));
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 22px;
+}
+
+.floating-bubble {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  max-width: calc(100vw - 40px);
+  min-height: 44px;
+  padding: 12px 18px;
+  background: #fff;
+  color: #0f488b;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 5px 22px #0f172a20;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.floating-bubble:is(:hover, :focus-visible) {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #0f488b35;
+}
+
+/* Thought bubble: two little trailing circles */
+.thought-bubble {
+  border-radius: 28px;
+}
+
+.thought-bubble::before,
+.thought-bubble::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 3px 5px #0f172a12;
+}
+
+.thought-bubble::before {
+  width: 12px;
+  height: 12px;
+  bottom: -9px;
+  right: 24px;
+}
+
+.thought-bubble::after {
+  width: 6px;
+  height: 6px;
+  bottom: -18px;
+  right: 16px;
+}
+
+/* Speech bubble: pointed tail */
+.speech-bubble {
+  border-radius: 18px;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  right: 21px;
+  bottom: -7px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  transform: skewY(-30deg);
+}
+
+/* Space to scroll footer above the floating controls */
+body {
+  padding-bottom: 165px;
+}
+
+/* LOGO: remove border, retain blue square and soft light */
+.core {
+  position: relative;
+  isolation: isolate;
+  padding: 16px;
+  background: #0f488b;
+  border: none;
+  outline: none;
+  border-radius: 26px;
+  transform: rotate(-8deg);
+  box-shadow:
+    0 0 24px #48a8ff55,
+    0 0 65px #348cff33,
+    0 18px 45px #0003;
+}
+
+.core img {
+  position: relative;
+  z-index: 1;
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  transform: rotate(8deg);
+}
+
+/* Angular circuit paths: hidden until hover */
+.core::before,
+.core::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s ease;
+  background:
+    linear-gradient(#71d7ff, #71d7ff) left top / 45% 2px no-repeat,
+    linear-gradient(#71d7ff, #71d7ff) right top / 2px 38% no-repeat,
+    linear-gradient(#71d7ff, #71d7ff) right bottom / 45% 2px no-repeat,
+    linear-gradient(#71d7ff, #71d7ff) left bottom / 2px 38% no-repeat,
+    radial-gradient(circle, #fff 0 2px, transparent 3px)
+      right top / 8px 8px no-repeat,
+    radial-gradient(circle, #fff 0 2px, transparent 3px)
+      left bottom / 8px 8px no-repeat;
+  filter: drop-shadow(0 0 5px #54caff);
+}
+
+.core::before {
+  inset: -22px;
+}
+
+.core::after {
+  inset: -42px;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .core:hover {
+    animation: logo-spin 3s linear infinite;
+    box-shadow:
+      0 0 35px #48a8ff88,
+      0 0 90px #348cff55,
+      0 18px 45px #0003;
+  }
+
+  .core:hover::before {
+    opacity: 1;
+    animation: circuit-spin 2s linear infinite;
+  }
+
+  .core:hover::after {
+    opacity: .65;
+    animation: circuit-spin 3.5s linear infinite reverse;
+  }
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(-8deg); }
+  to   { transform: rotate(352deg); }
+}
+
+@keyframes circuit-spin {
+  from { transform: rotate(0); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (max-width: 650px) {
+  .floating-tools {
+    right: 14px;
+    bottom: calc(18px + env(safe-area-inset-bottom));
+  }
+
+  .floating-bubble {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-bubble,
+  .footer-links > a,
+  .wechat-popover > summary {
+    transition: none;
+  }
+
+  .floating-bubble:is(:hover, :focus-visible),
+  .footer-links > a:is(:hover, :focus-visible),
+  .wechat-popover > summary:is(:hover, :focus-visible),
+  .wechat-popover[open] > summary {
+    transform: none;
+  }
+}
