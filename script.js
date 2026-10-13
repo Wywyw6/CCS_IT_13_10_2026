@@ -457,6 +457,48 @@ Object.assign(translations, {
   }
 });
 
+Object.assign(translations, {
+  eventhub: {
+    zh: "最近有什么活动？",
+    en: "What’s coming up?"
+  },
+  eventhubd: {
+    zh: "前往官网查看活动详情与报名信息。",
+    en: "Explore event details and sign-up information on CCS."
+  },
+  updatetext: {
+    zh: "下一场见！前往 CCS 官网活动页，或关注「剑桥CCS」微信公众号，查看时间、地点与报名方式。",
+    en: "See you at the next one! Check CCS events or “剑桥CCS” on WeChat for dates, venues and sign-up details."
+  },
+  notlive: {
+    zh: "点击右侧入口查看官网；本页不自动同步活动。",
+    en: "Follow the event link to CCS; this page does not sync listings automatically."
+  },
+  bubbletools: {
+    zh: "生活小工具",
+    en: "Everyday tools"
+  },
+  bubblereviews: {
+    zh: "看看大家怎么说",
+    en: "What’s everyone saying?"
+  }
+});
+
+Object.assign(translations, {
+  socialwechat: {
+    zh: "微信二维码",
+    en: "WeChat QR code"
+  },
+  socialrednote: {
+    zh: "小红书",
+    en: "Rednote"
+  },
+  socialcontact: {
+    zh: "联系我们",
+    en: "Contact us"
+  }
+});
+
 const nav = document.querySelector('#nav');
 const menu = document.querySelector('.menu');
 function closeMenu() { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); }
