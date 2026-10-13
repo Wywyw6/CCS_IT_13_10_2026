@@ -269,6 +269,194 @@ const translations = {
     "en": "Sources checked: 13 October 2026"
   }
 };
+
+Object.assign(translations, {
+  nav_about: {
+    zh: "认识 CCS 与 IT",
+    en: "About CCS & IT"
+  },
+
+  hero1: {
+    zh: "让相遇发生，",
+    en: "Bring people together."
+  },
+  hero2: {
+    zh: "让精彩上线。",
+    en: "Make moments happen."
+  },
+  intro: {
+    zh: "正在向往剑桥，还是已经身在其中？从网站上的实用信息，到活动现场的灯光与声音，认识 CCS，也认识幕后的 IT 部。",
+    en: "Thinking about Cambridge, or already here? From useful information online to lights and sound at events, discover CCS and the IT team behind the scenes."
+  },
+  explore: {
+    zh: "认识我们",
+    en: "Meet the team"
+  },
+  joinbutton: {
+    zh: "发现下一场活动",
+    en: "Find your next event"
+  },
+  draft: {
+    zh: "了解社团 · 探索活动 · 发现参与方式",
+    en: "Meet the society · Explore events · Get involved"
+  },
+  tagline: {
+    zh: "屏幕背后，舞台身边。",
+    en: "Behind the screen. Beside the stage."
+  },
+
+  abouttitle: {
+    zh: "CCS 是谁？IT 又在做什么？",
+    en: "Meet CCS. Discover IT."
+  },
+  aboutintro: {
+    zh: "剑桥中国学生会（CCS）由剑桥大学中国学生于 1998 年创立并独立运营，是非盈利性学生社团。通过文化、社交、体育与职业发展活动，CCS 帮助同学融入剑桥生活，也让彼此的联系更紧密。",
+    en: "Founded in 1998 and independently run by Chinese students at Cambridge, CCS is a non-profit student society. Its cultural, social, sporting and careers activities help students settle into Cambridge life and connect with one another."
+  },
+
+  reviews: {
+    zh: "线上：让信息触手可及",
+    en: "Online: keeping you connected"
+  },
+  reviewsd: {
+    zh: "IT 部维护与运营 CCS 网站，让同学更方便地找到活动资讯、实用工具与交流入口。",
+    en: "IT maintains and operates the CCS website, helping students find events, useful tools and ways to connect."
+  },
+  reviewsl: {
+    zh: "探索 CCS 官网",
+    en: "Explore the CCS website"
+  },
+
+  connect: {
+    zh: "现场：让活动顺利开展",
+    en: "At events: making it work"
+  },
+  connectd: {
+    zh: "从场地对接、设备确认到现场技术支持，IT 部参与 Open Mic 等活动的筹备与执行，照顾舞台前后的技术细节。",
+    en: "From venue coordination and equipment checks to technical support, IT helps prepare and run events such as Open Mic, taking care of the details behind the stage."
+  },
+  connectl: {
+    zh: "查看 CCS 活动",
+    en: "Explore CCS events"
+  },
+
+  tools: {
+    zh: "幕后：一起把想法实现",
+    en: "Behind the scenes: bringing ideas to life"
+  },
+  toolsd: {
+    zh: "IT 部也参与部分活动的美术设计、物料制作、游戏策划、伴奏选取与推文审核，与不同部门一起把创意变成体验。",
+    en: "IT also contributes to selected events through visual design, materials, games, backing-track selection and post reviews, working with other teams to turn ideas into experiences."
+  },
+  toolsl: {
+    zh: "了解如何参与",
+    en: "Find out how to get involved"
+  },
+  aboutnote: {
+    zh: "不只是写代码。IT 部连接线上服务与线下活动，让技术、创意和团队协作真正服务于同学。",
+    en: "There’s more to IT than code. The team connects online services with in-person events, putting technology, creativity and teamwork to practical use."
+  },
+  aboutsource: {
+    zh: "探索官网现有服务",
+    en: "Explore CCS online"
+  },
+
+  eventtitle: {
+    zh: "下一次相遇，在哪里？",
+    en: "Where will we meet next?"
+  },
+  allevents: {
+    zh: "查看最新活动与报名",
+    en: "See latest events & sign-up details"
+  },
+  updates: {
+    zh: "先看看最近有什么好玩的。",
+    en: "Find something to look forward to."
+  },
+  updatetext: {
+    zh: "想参加下一场活动？前往 CCS 官网活动页，或关注「剑桥CCS」微信公众号，查看时间、地点与报名方式。这里也收录了部分往期活动，带你认识 CCS 的校园生活。",
+    en: "Looking for your next event? Visit the CCS events page or follow “剑桥CCS” on WeChat for dates, venues and booking details. The past highlights here offer a taste of life with CCS."
+  },
+  wechat: {
+    zh: "前往官网关注微信公众号",
+    en: "Find the WeChat account on CCS"
+  },
+  notlive: {
+    zh: "最新安排与报名状态，以官方活动公告为准。",
+    en: "Check the official announcement for the latest details and booking availability."
+  },
+
+  faqtitle: {
+    zh: "从这里，多了解一点。",
+    en: "Get to know us better."
+  },
+  faqdesc: {
+    zh: "关于 CCS、IT 部和参与方式，你可能想知道这些。",
+    en: "A few useful answers about CCS, IT and getting involved."
+  },
+  whatq: {
+    zh: "还没入学，可以先了解 CCS 吗？",
+    en: "Can I explore CCS before joining Cambridge?"
+  },
+  whata: {
+    zh: "当然可以。你可以先浏览 CCS 官网与公开活动信息，了解剑桥的学生社群与校园生活。具体活动是否开放给未入学同学，请查看当次公告或联系主办方。",
+    en: "Absolutely. Explore the CCS website and public event information to get a feel for the student community. To attend before enrolling, check the event’s eligibility rules or ask the organisers."
+  },
+  itq: {
+    zh: "IT 部只负责写代码吗？",
+    en: "Is IT only about coding?"
+  },
+  ita: {
+    zh: "不只。网站维护与运营是工作的一部分；IT 部也参与场地对接、设备确认、灯光音响与现场技术支持，并协助部分活动的设计和内容筹备。",
+    en: "No. Website maintenance and operations are part of the role, alongside venue coordination, equipment checks, lighting, sound and on-site technical support. IT also helps with design and content preparation for selected events."
+  },
+  joinq: {
+    zh: "想加入 IT 部，应该从哪里开始？",
+    en: "How can I join the IT team?"
+  },
+  joina: {
+    zh: "关注 CCS 最新招新公告，或通过下方邮箱询问当前安排。你可以简单介绍自己的兴趣、愿意尝试的方向，以及相关项目或活动经验。",
+    en: "Look out for CCS recruitment announcements or email below to ask about current opportunities. Introduce your interests, what you would like to try, and any relevant project or event experience."
+  },
+  skillsq: {
+    zh: "不会编程，也能加入 IT 部吗？",
+    en: "Can I join without coding experience?"
+  },
+  skillsa: {
+    zh: "编程并非硬性要求。认真负责、主动学习、团队合作与现场应变同样重要。活动筹备或灯光音响经验会有帮助；了解编程与网页搭建也是加分项，具体以当期招新公告为准。",
+    en: "Coding is not a compulsory requirement. Responsibility, willingness to learn, teamwork and adaptability matter too. Event, lighting or sound experience is helpful, as is knowledge of programming or web development. Check the current recruitment notice for details."
+  },
+  accountq: {
+    zh: "参与 IT 部，可以学到什么？",
+    en: "What could I learn in IT?"
+  },
+  accounta: {
+    zh: "你有机会接触网站开发与后台运营、设计与图像处理，以及舞台灯光和音响调节。具体参与内容取决于项目与分工；你也能看到自己的成果投入使用，在反馈中改进，并结识一起做事的伙伴。",
+    en: "Depending on projects and responsibilities, you could explore web development, platform administration, design, image editing, lighting and sound. You can see your work used in practice, improve it through feedback and meet people to build things with."
+  },
+
+  contacttitle: {
+    zh: "有问题、有想法，\n或者想一起做点什么？",
+    en: "A question, an idea,\nor a wish to get involved?"
+  },
+  contactdesc: {
+    zh: "无论你正在了解剑桥生活、寻找活动信息，还是希望参与 IT 部，都可以从这里联系 CCS。",
+    en: "Whether you’re exploring Cambridge life, looking for events or interested in IT, start a conversation with CCS."
+  },
+  email: {
+    zh: "联系 CCS",
+    en: "Contact CCS"
+  },
+  generalemail: {
+    zh: "CCS 通用联系邮箱",
+    en: "CCS general enquiries"
+  },
+  noform: {
+    zh: "想参加活动？请使用当次官方公告中的报名入口。想加入 IT 部？请关注招新公告或邮件咨询；本页暂未提供 IT 部专属报名表。",
+    en: "Joining an event? Use the booking link in its official announcement. Interested in IT? Check recruitment announcements or email CCS; no IT-specific application form is available on this page."
+  }
+});
+
 const nav = document.querySelector('#nav');
 const menu = document.querySelector('.menu');
 function closeMenu() { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); }
